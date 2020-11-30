@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+    </script>
+    
+    <script>
+              
+              function myFunction() {
+              var x = document.getElementById("heads");
+              if (x.className === "header") {
+                x.className += " responsive";
+              } else {
+                x.className = "header";
+              }
+            }
+    </script>
+    <title> Home</title>
+</head>
+<body>
+   <header>
+    <div class="header" id="heads">
+      <img src="./img/Home.PNG" alt="" href="index.html" class="lg1"> <a class="logo">TextureBuild
+      </a>
+         
+      
+         
+          <a class="active" href="index.html">Home</a>
+          <a  href="Blog.html">Blog</a>
+          <a href="contact.html">ContactUs</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      
+      </div>
+   </header> 
+   <div class="slide-container">
+   <div class="slider">
+     <div class="slides">
+       <input type="radio" name="radio-btn" id="radio1">
+       <input type="radio" name="radio-btn" id="radio2">
+       <input type="radio" name="radio-btn" id="radio3">
+       
+       <div class="slide first">
+         <img src="./img/first.jpg" alt="" srcset="">
+         <h3 class="head3">Make it perfect!....</h3>
+       </div>
+       <div class="slide">
+        <img src="./img/office.jpg" alt="" srcset="">
+        <h3 class="head3">Completed projects</h3>
+        <button class="btn-call"><b>Read More</b></button>
+      </div>
+      <div class="slide">
+        <img src="./img/last1.jpg" alt="" srcset="">
+        <h2 class="head2">More information</h2>
+         <button class="btn-call"><b>Call</b></button>
+      </div>
+      <!--Automatic navigation-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+         
+      </div>
+      <!--Automatic Navigation end-->
+     </div>
+     <!--Mannual navigation-->
+     <div class="navigation-mannual">
+     <label for="radio1" class="mannual-btn"></label>
+     <label for="radio2" class="mannual-btn"></label>
+     <label for="radio3" class="mannual-btn"></label>
+
+    </div>
+     <!--Mannual nav end-->
+   </div>
+  </div>
+  <script type="text/javascript">
+  var counter =1;
+  setInterval(function(){
+    document.getElementById('radio'+ counter).checked = true ;
+    counter++;
+    if(counter > 3){
+      counter = 1;
+    }
+  },  5000);
+</script>
+
+<!--Vision and Mision-->
+<div class="vision">
+  <h1>VISION AND MISION</h1>
+  <p>To develop quality constructions, trust in our customers, and benchmark realty in newer areas that are aimed at the future.</p>
+</div>
+<div class="container">
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./img/quality.jpg" alt="" class="emoji">
+      <h3>Quality</h3>
+      <p>100% Assurance</p>
+      <button class="Read-More">Read More</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./img/money.jpg" alt="" class="emoji2">
+      <h3>Cost Saving</h3>
+      <p>Reliable Product</p>
+      <button class="Read-More">Read More</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="./img/time.jpg" alt="" class="emoji">
+      <h3>On Time </h3>
+      <p>Completed On Time</p>
+      <button class="Read-More">Read More</button>
+    </div>
+  </div>
+   </div>
+   <footer>
+     
+     &copy; Copyright 2020 PrashantShinde
+     <table>
+      
+       
+       <tr>
+         <th>Contact Us</th>
+          <th>Address</th>    
+       </tr>
+       <tr>
+         <td>9167905484</td>
+         <td>Tulja Bhavani society  Dawadi Dombivli (E) behind R.T.P High School</td>
+       </tr>
+      
+       </table>
+       <ul>
+        <li><i class="fa fa-instagram" style="font-size:24px"></i>
+        </li>
+        <li><i class="fa fa-twitter" style="font-size:24px; color:white;"></i></li>
+        <li><i class="fa fa-linkedin-square" style="font-size:24px;color: white;"></i></li>
+        <li><i class="fa fa-facebook-f" style="font-size:24px"></i></lis>
+       </ul>
+   </footer>
+</body>
+</html>

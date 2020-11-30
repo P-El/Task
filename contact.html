@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+    <script> 
+              
+              function myFunction() {
+              var x = document.getElementById("heads");
+              if (x.className === "header") {
+                x.className += " responsive";
+              } else {
+                x.className = "header";
+              }
+            }
+  
+    </script>
+</head>
+<body>
+    <header>
+    <div class="header" id="heads">
+      <img src="./img/Home.PNG" alt="" href="index.html" class="lg1"> <a class="logo">TextureBuild
+      </a>
+         
+      
+         
+          <a class="active" href="index.html">Home</a>
+          <a  href="Blog.html">Blog</a>
+          <a href="contact.html">ContactUs</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      
+      </div>
+   </header> 
+
+    <div class="container">
+    <form action="">
+      <h1 style="text-align: center;">Feedback</h1>
+      
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.."><br />
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br />
+    
+      <label for="lname">Phone No.</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your Phone Number.."><br />
+
+      
+  
+      
+      <textarea id="subject" name="subject" placeholder="Write Feedback.." style="height:200px"></textarea><br />
+  
+      <input type="submit" value="Submit" class="submits">
+    </form>
+  </div>
+ <div>
+   <br />
+   <br />
+  <section class="section pb-5">
+
+   
+  <h2 style="text-align: center;"> Our Locaion
+  </h2> 
+  <br />
+    <div class="row">
+  
+      <!--Grid column-->
+      <div class="col-lg-5 mb-4">
+  
+        <!--Form with header-->
+       
+        <!--Form with header-->
+  
+      </div>
+      <!--Grid column-->
+  
+      <!--Grid column-->
+      <div class="col-lg-7">
+  
+        <!--Google map-->
+        <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+          <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+  
+        
+  
+      </div>
+      <!--Grid column-->
+  
+    </div>
+  
+  </section>
+</body>
+</html> 

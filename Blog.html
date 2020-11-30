@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Blog</title>
+    <script>
+              
+        function myFunction() {
+        var x = document.getElementById("heads");
+        if (x.className === "header") {
+          x.className += " responsive";
+        } else {
+          x.className = "header";
+        }
+      }
+</script>
+</head>
+<body>
+    <header>
+        <div class="header" id="heads">
+          <img src="./img/Home.PNG" alt="" href="index.html" class="lg1"> <a class="logo">TextureBuild
+          </a>
+             
+          
+             
+              <a class="active" href="index.html">Home</a>
+              <a href="Blog.html">Blog</a>
+              <a href="contact.html">ContactUs</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+          
+          </div>
+       </header>
+       <div class="header1">
+        <h2>Baisc design Arcitecture</h2>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Masterpiece</h2>
+            <h5>Title description, Dec 30, 2020</h5>
+            <div class="fakeimg1" style="height:200px;"><img src=""></div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+          <div class="card">
+            <h2>The new idea!</h2>
+            <h5>Title description, Sep 29, 2020</h5>
+            <div class="fakeimg2" style="height:200px;"></div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg3" style="height:200px;"></div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+             
+            <div class="fakeimg">Image</div><br>
+            <div class="fakeimg">Image</div>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <i class="fa fa-instagram" style="font-size:24px"></i>
+             
+          </div>
+        </div>
+      </div>
+      
+       
+</body>
+</html>
